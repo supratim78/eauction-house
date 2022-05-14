@@ -1,0 +1,419 @@
+{
+	"info": {
+		"_postman_id": "520d28c0-f443-45f2-baf1-d2b3a527a09d",
+		"name": "HackFSE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Place A Bid Buyer Service",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productName\" : \"Test Product1\",\r\n\t\"shortDescription\" : \"This is product's short description\",\r\n\t\"detailedDescription\" : \"This is product's detail description\",\r\n\t\"category\" : \"Show piece\",\r\n\t\"price\" : \"100\",\r\n\t\"bidEndDate\" : \"10/10/2022\",\r\n\t\"firstName\" : \"Supratim\",\r\n\t\"lastName\" : \"Bhattacharyya\",\r\n\t\"address\" : \"61, Santoshpur Avenue, Kolkata 700075\",\r\n\t\"city\" : \"Kolkata\",\r\n    \"state\" : \"West Bengal\",\r\n\t\"pin\" : \"700075\",\r\n\t\"phone\" : \"9830533053\",\r\n\t\"email\" : \"abc@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8020/seller/add-product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8020",
+					"path": [
+						"seller",
+						"add-product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Service",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productName\" : \"Test Product1\",\r\n\t\"shortDescription\" : \"This is product's short description\",\r\n\t\"detailedDescription\" : \"This is product's detail description\",\r\n\t\"category\" : \"Show piece\",\r\n\t\"price\" : \"100\",\r\n\t\"bidEndDate\" : \"10/10/2022\",\r\n\t\"firstName\" : \"Supratim\",\r\n\t\"lastName\" : \"Bhattacharyya\",\r\n\t\"address\" : \"61, Santoshpur Avenue, Kolkata 700075\",\r\n\t\"city\" : \"Kolkata\",\r\n    \"state\" : \"West Bengal\",\r\n\t\"pin\" : \"700075\",\r\n\t\"phone\" : \"9830533053\",\r\n\t\"email\" : \"abc@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/e-auction/api/v1/user/register-user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"e-auction",
+						"api",
+						"v1",
+						"user",
+						"register-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Place A Bid Gateway Service",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productName\" : \"Test Product1\",\r\n\t\"shortDescription\" : \"This is product's short description\",\r\n\t\"detailedDescription\" : \"This is product's detail description\",\r\n\t\"category\" : \"Show piece\",\r\n\t\"price\" : \"100\",\r\n\t\"bidEndDate\" : \"10/10/2022\",\r\n\t\"firstName\" : \"Supratim\",\r\n\t\"lastName\" : \"Bhattacharyya\",\r\n\t\"address\" : \"61, Santoshpur Avenue, Kolkata 700075\",\r\n\t\"city\" : \"Kolkata\",\r\n    \"state\" : \"West Bengal\",\r\n\t\"pin\" : \"700075\",\r\n\t\"phone\" : \"9830533053\",\r\n\t\"email\" : \"abc@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8020/seller/add-product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8020",
+					"path": [
+						"seller",
+						"add-product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Place A Bid Bid Service",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productId\" : \"3\",\r\n    \"bidAmount\" : \"200\",\r\n    \"buyerId\" : \"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8050/e-auction/api/v1/buyer/place-bid",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8050",
+					"path": [
+						"e-auction",
+						"api",
+						"v1",
+						"buyer",
+						"place-bid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Product Product Service",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productName\" : \"Test Product3\",\r\n\t\"shortDescription\" : \"This is product's short description\",\r\n\t\"detailedDescription\" : \"This is product's detail description\",\r\n\t\"category\" : \"Show piece\",\r\n\t\"startingPrice\" : \"100\",\r\n\t\"bidEndDate\" : \"10/10/2022\",\r\n    \"sellerId\" : \"3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8030/e-auction/api/v1/product/add-product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8030",
+					"path": [
+						"e-auction",
+						"api",
+						"v1",
+						"product",
+						"add-product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add New Product Seller Service",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productName\" : \"Test Product30\",\r\n\t\"shortDescription\" : \"This is Test Product30's short description\",\r\n\t\"detailedDescription\" : \"This is Test Product30's detail description\",\r\n\t\"category\" : \"Show piece\",\r\n\t\"startingPrice\" : \"100\",\r\n\t\"bidEndDate\" : \"10/10/2022\",\r\n\t\"firstName\" : \"Supratim\",\r\n\t\"lastName\" : \"Bhattacharyya\",\r\n\t\"address\" : \"61, Santoshpur Avenue, Kolkata 700075\",\r\n\t\"city\" : \"Kolkata\",\r\n    \"state\" : \"West Bengal\",\r\n\t\"pin\" : \"700075\",\r\n\t\"phone\" : \"9830533054\",\r\n\t\"email\" : \"abcd@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8020/e-auction/api/v1/seller/add-product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8020",
+					"path": [
+						"e-auction",
+						"api",
+						"v1",
+						"seller",
+						"add-product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add New Product Gateway Service",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productName\" : \"Test Product70\",\r\n\t\"shortDescription\" : \"This is Test Product40's short description\",\r\n\t\"detailedDescription\" : \"This is Test Product40's detail description\",\r\n\t\"category\" : \"Painting\",\r\n\t\"startingPrice\" : \"300\",\r\n\t\"bidEndDate\" : \"10/10/2022\",\r\n\t\"firstName\" : \"Supratim\",\r\n\t\"lastName\" : \"Bhattacharyya\",\r\n\t\"address\" : \"61, Santoshpur Avenue, Kolkata 700075\",\r\n\t\"city\" : \"Kolkata\",\r\n    \"state\" : \"West Bengal\",\r\n\t\"pin\" : \"700075\",\r\n\t\"phone\" : \"9830533054\",\r\n\t\"email\" : \"abcd@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/e-auction/api/v1/seller/add-product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"e-auction",
+						"api",
+						"v1",
+						"seller",
+						"add-product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View Biddings Listing Service",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productName\" : \"Test Product2\",\r\n\t\"shortDescription\" : \"This is product's short description\",\r\n\t\"detailedDescription\" : \"This is product's detail description\",\r\n\t\"category\" : \"Show piece\",\r\n\t\"price\" : \"100\",\r\n\t\"bidEndDate\" : \"10/10/2022\",\r\n\t\"firstName\" : \"Anirban\",\r\n\t\"lastName\" : \"Bhattacharyya\",\r\n\t\"address\" : \"61, Santoshpur Avenue, Kolkata 700075\",\r\n\t\"city\" : \"Kolkata\",\r\n    \"state\" : \"West Bengal\",\r\n\t\"pin\" : \"700075\",\r\n\t\"phone\" : \"9830533054\",\r\n\t\"email\" : \"abcd@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8020/e-auction/api/v1/seller/add-product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8020",
+					"path": [
+						"e-auction",
+						"api",
+						"v1",
+						"seller",
+						"add-product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View Biddings Gateway Service",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productName\" : \"Test Product2\",\r\n\t\"shortDescription\" : \"This is product's short description\",\r\n\t\"detailedDescription\" : \"This is product's detail description\",\r\n\t\"category\" : \"Show piece\",\r\n\t\"price\" : \"100\",\r\n\t\"bidEndDate\" : \"10/10/2022\",\r\n\t\"firstName\" : \"Anirban\",\r\n\t\"lastName\" : \"Bhattacharyya\",\r\n\t\"address\" : \"61, Santoshpur Avenue, Kolkata 700075\",\r\n\t\"city\" : \"Kolkata\",\r\n    \"state\" : \"West Bengal\",\r\n\t\"pin\" : \"700075\",\r\n\t\"phone\" : \"9830533054\",\r\n\t\"email\" : \"abcd@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8020/e-auction/api/v1/seller/add-product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8020",
+					"path": [
+						"e-auction",
+						"api",
+						"v1",
+						"seller",
+						"add-product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product Seller Service",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8020/seller/delete/6268a3e6f39a376f34a2fe6f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8020",
+					"path": [
+						"seller",
+						"delete",
+						"6268a3e6f39a376f34a2fe6f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product Gateway Service",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8020/seller/delete/6268a3e6f39a376f34a2fe6f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8020",
+					"path": [
+						"seller",
+						"delete",
+						"6268a3e6f39a376f34a2fe6f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Bid Buyer Service",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8040/e-auction/api/v1/buyer/update-bid/44/suvo@gmail.com/600",
+					"host": [
+						"localhost"
+					],
+					"port": "8040",
+					"path": [
+						"e-auction",
+						"api",
+						"v1",
+						"buyer",
+						"update-bid",
+						"44",
+						"suvo@gmail.com",
+						"600"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Bid Gateway Service",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8040/e-auction/api/v1/buyer/update-bid/44/suvo@gmail.com/600",
+					"host": [
+						"localhost"
+					],
+					"port": "8040",
+					"path": [
+						"e-auction",
+						"api",
+						"v1",
+						"buyer",
+						"update-bid",
+						"44",
+						"suvo@gmail.com",
+						"600"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
