@@ -1,0 +1,1405 @@
+2022-05-07 16:16:11,428 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
+2022-05-07 16:16:11,429 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting EauctionHouseProductServiceApplication using Java 15.0.1 on DESKTOP-UP4G20T with PID 5532 (D:\Work\HackFSE-2022-v1\project-repo\eauction-house\eauction-house-product-service\build\classes\java\main started by supra in D:\Work\HackFSE-2022-v1\project-repo\eauction-house\eauction-house-product-service)
+2022-05-07 16:16:11,429 INFO org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2022-05-07 16:16:11,476 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Fetching config from server at : http://localhost:8888
+2022-05-07 16:16:11,477 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Located environment: name=product, profiles=[dev], label=null, version=null, state=null
+2022-05-07 16:16:11,479 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-07 16:16:11,479 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-07 16:16:12,008 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-07 16:16:12,110 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 96 ms. Found 1 JPA repository interfaces.
+2022-05-07 16:16:12,283 INFO org.springframework.core.log.LogAccessor [restartedMain] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2022-05-07 16:16:12,292 INFO org.springframework.core.log.LogAccessor [restartedMain] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2022-05-07 16:16:12,382 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=0c451613-8f78-35f8-9f3e-442cb85c5674
+2022-05-07 16:16:12,505 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 16:16:12,546 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 16:16:12,951 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8030 (http)
+2022-05-07 16:16:12,957 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8030"]
+2022-05-07 16:16:12,957 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-05-07 16:16:12,957 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-07 16:16:13,068 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-07 16:16:13,069 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1590 ms
+2022-05-07 16:16:13,179 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-07 16:16:13,241 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-05-07 16:16:13,432 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-07 16:16:13,514 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-05-07 16:16:13,793 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-05-07 16:16:13,812 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-05-07 16:16:14,321 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-07 16:16:14,327 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-07 16:16:14,684 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-07 16:16:14,987 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2022-05-07 16:16:15,079 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses RestTemplate.
+2022-05-07 16:16:15,219 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [restartedMain] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-05-07 16:16:15,241 INFO org.springframework.cloud.stream.function.FunctionConfiguration$FunctionBindingRegistrar [restartedMain] Functional binding is disabled due to the presense of @EnableBinding annotation in your configuration
+2022-05-07 16:16:15,328 INFO org.springframework.core.log.LogAccessor [restartedMain] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2022-05-07 16:16:15,328 INFO org.springframework.core.log.LogAccessor [restartedMain] Channel 'product.errorChannel' has 1 subscriber(s).
+2022-05-07 16:16:15,328 INFO org.springframework.core.log.LogAccessor [restartedMain] started bean '_org.springframework.integration.errorLogger'
+2022-05-07 16:16:15,329 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Creating binder: ktable
+2022-05-07 16:16:15,386 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Caching the binder: ktable
+2022-05-07 16:16:15,386 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Retrieving cached binder: ktable
+2022-05-07 16:16:15,387 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Creating binder: kafka
+2022-05-07 16:16:15,424 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Caching the binder: kafka
+2022-05-07 16:16:15,424 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Retrieving cached binder: kafka
+2022-05-07 16:16:15,424 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Creating binder: kstream
+2022-05-07 16:16:15,442 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Caching the binder: kstream
+2022-05-07 16:16:15,442 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Retrieving cached binder: kstream
+2022-05-07 16:16:15,442 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Creating binder: globalktable
+2022-05-07 16:16:15,463 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Caching the binder: globalktable
+2022-05-07 16:16:15,463 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Retrieving cached binder: globalktable
+2022-05-07 16:16:15,463 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Retrieving cached binder: kafka
+2022-05-07 16:16:15,495 INFO org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner [restartedMain] Using kafka topic for outbound: PRODUCT_TOPIC
+2022-05-07 16:16:15,497 INFO org.apache.kafka.common.config.AbstractConfig [restartedMain] AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-05-07 16:16:15,582 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka version: 3.0.1
+2022-05-07 16:16:15,582 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka commitId: 8e30984f43e64d8b
+2022-05-07 16:16:15,582 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka startTimeMs: 1651920375581
+2022-05-07 16:16:15,801 INFO org.apache.kafka.common.utils.AppInfoParser [kafka-admin-client-thread | adminclient-1] App info kafka.admin.client for adminclient-1 unregistered
+2022-05-07 16:16:15,804 INFO org.apache.kafka.common.metrics.Metrics [kafka-admin-client-thread | adminclient-1] Metrics scheduler closed
+2022-05-07 16:16:15,805 INFO org.apache.kafka.common.metrics.Metrics [kafka-admin-client-thread | adminclient-1] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-05-07 16:16:15,805 INFO org.apache.kafka.common.metrics.Metrics [kafka-admin-client-thread | adminclient-1] Metrics reporters closed
+2022-05-07 16:16:15,812 INFO org.apache.kafka.clients.producer.ProducerConfig [restartedMain] Idempotence will be disabled because acks is set to 1, not set to 'all'.
+2022-05-07 16:16:15,812 INFO org.apache.kafka.common.config.AbstractConfig [restartedMain] ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+2022-05-07 16:16:15,845 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka version: 3.0.1
+2022-05-07 16:16:15,846 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka commitId: 8e30984f43e64d8b
+2022-05-07 16:16:15,846 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka startTimeMs: 1651920375845
+2022-05-07 16:16:15,857 INFO org.apache.kafka.clients.Metadata [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Resetting the last seen epoch of partition PRODUCT_TOPIC-0 to 0 since the associated topicId changed from null to 8pJDXN2yT12qC7Hxtze1RQ
+2022-05-07 16:16:15,858 INFO org.apache.kafka.clients.Metadata [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Cluster ID: Fg-suBJLRSO0cNl9srhg1A
+2022-05-07 16:16:15,865 INFO org.springframework.core.log.LogAccessor [restartedMain] Channel 'product.output' has 1 subscriber(s).
+2022-05-07 16:16:15,873 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2022-05-07 16:16:15,922 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region default
+2022-05-07 16:16:15,930 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2022-05-07 16:16:15,962 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2022-05-07 16:16:15,963 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2022-05-07 16:16:15,963 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2022-05-07 16:16:15,963 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2022-05-07 16:16:15,963 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2022-05-07 16:16:15,963 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2022-05-07 16:16:15,963 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2022-05-07 16:16:16,090 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2022-05-07 16:16:16,097 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2022-05-07 16:16:16,103 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-05-07 16:16:16,117 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1651920376116 with initial instances count: 6
+2022-05-07 16:16:16,119 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application PRODUCT with eureka with status UP
+2022-05-07 16:16:16,119 INFO com.netflix.discovery.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1651920376119, current=UP, previous=STARTING]
+2022-05-07 16:16:16,120 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_PRODUCT/DESKTOP-UP4G20T:product:8030: registering service...
+2022-05-07 16:16:16,120 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8030"]
+2022-05-07 16:16:16,133 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8030 (http) with context path ''
+2022-05-07 16:16:16,134 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 8030
+2022-05-07 16:16:16,159 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_PRODUCT/DESKTOP-UP4G20T:product:8030 - registration status: 204
+2022-05-07 16:16:16,213 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started EauctionHouseProductServiceApplication in 5.748 seconds (JVM running for 6.291)
+2022-05-07 16:16:24,426 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8030-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-07 16:16:24,427 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8030-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-05-07 16:16:24,431 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8030-exec-1] Completed initialization in 4 ms
+2022-05-07 16:16:24,688 INFO com.cts.eauction.microservices.product.services.ProductService [http-nio-8030-exec-1] product Delete Event=Event [id=c7e017f8-4435-4482-8ddc-d34cc6ae6354, created=Sat May 07 16:16:24 IST 2022, eventType=DELETE]
+2022-05-07 16:18:41,938 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
+2022-05-07 16:18:41,942 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting EauctionHouseProductServiceApplication using Java 15.0.1 on DESKTOP-UP4G20T with PID 17400 (D:\Work\HackFSE-2022-v1\project-repo\eauction-house\eauction-house-product-service\build\classes\java\main started by supra in D:\Work\HackFSE-2022-v1\project-repo\eauction-house\eauction-house-product-service)
+2022-05-07 16:18:41,943 INFO org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2022-05-07 16:18:41,977 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Fetching config from server at : http://localhost:8888
+2022-05-07 16:18:41,977 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Located environment: name=product, profiles=[dev], label=null, version=null, state=null
+2022-05-07 16:18:41,985 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-07 16:18:41,985 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-07 16:18:42,513 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-07 16:18:42,606 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 86 ms. Found 1 JPA repository interfaces.
+2022-05-07 16:18:42,785 INFO org.springframework.core.log.LogAccessor [restartedMain] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2022-05-07 16:18:42,793 INFO org.springframework.core.log.LogAccessor [restartedMain] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2022-05-07 16:18:42,867 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=0c451613-8f78-35f8-9f3e-442cb85c5674
+2022-05-07 16:18:42,966 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 16:18:43,014 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 16:18:43,507 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8030 (http)
+2022-05-07 16:18:43,518 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8030"]
+2022-05-07 16:18:43,518 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-05-07 16:18:43,518 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-07 16:18:43,663 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-07 16:18:43,663 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1677 ms
+2022-05-07 16:18:43,775 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-07 16:18:43,827 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-05-07 16:18:44,013 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-07 16:18:44,095 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-05-07 16:18:44,391 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-05-07 16:18:44,406 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-05-07 16:18:44,869 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-07 16:18:44,874 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-07 16:18:45,207 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-07 16:18:45,497 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2022-05-07 16:18:45,587 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses RestTemplate.
+2022-05-07 16:18:45,718 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [restartedMain] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-05-07 16:18:45,739 INFO org.springframework.cloud.stream.function.FunctionConfiguration$FunctionBindingRegistrar [restartedMain] Functional binding is disabled due to the presense of @EnableBinding annotation in your configuration
+2022-05-07 16:18:45,839 INFO org.springframework.core.log.LogAccessor [restartedMain] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2022-05-07 16:18:45,839 INFO org.springframework.core.log.LogAccessor [restartedMain] Channel 'product.errorChannel' has 1 subscriber(s).
+2022-05-07 16:18:45,839 INFO org.springframework.core.log.LogAccessor [restartedMain] started bean '_org.springframework.integration.errorLogger'
+2022-05-07 16:18:45,840 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Creating binder: ktable
+2022-05-07 16:18:45,895 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Caching the binder: ktable
+2022-05-07 16:18:45,895 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Retrieving cached binder: ktable
+2022-05-07 16:18:45,895 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Creating binder: kafka
+2022-05-07 16:18:45,931 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Caching the binder: kafka
+2022-05-07 16:18:45,932 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Retrieving cached binder: kafka
+2022-05-07 16:18:45,932 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Creating binder: kstream
+2022-05-07 16:18:45,945 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Caching the binder: kstream
+2022-05-07 16:18:45,945 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Retrieving cached binder: kstream
+2022-05-07 16:18:45,946 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Creating binder: globalktable
+2022-05-07 16:18:45,967 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Caching the binder: globalktable
+2022-05-07 16:18:45,967 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Retrieving cached binder: globalktable
+2022-05-07 16:18:45,968 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Retrieving cached binder: kafka
+2022-05-07 16:18:45,998 INFO org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner [restartedMain] Using kafka topic for outbound: PRODUCT_TOPIC
+2022-05-07 16:18:46,002 INFO org.apache.kafka.common.config.AbstractConfig [restartedMain] AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-05-07 16:18:46,115 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka version: 3.0.1
+2022-05-07 16:18:46,115 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka commitId: 8e30984f43e64d8b
+2022-05-07 16:18:46,115 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka startTimeMs: 1651920526114
+2022-05-07 16:18:46,472 INFO org.apache.kafka.common.utils.AppInfoParser [kafka-admin-client-thread | adminclient-1] App info kafka.admin.client for adminclient-1 unregistered
+2022-05-07 16:18:46,474 INFO org.apache.kafka.common.metrics.Metrics [kafka-admin-client-thread | adminclient-1] Metrics scheduler closed
+2022-05-07 16:18:46,474 INFO org.apache.kafka.common.metrics.Metrics [kafka-admin-client-thread | adminclient-1] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-05-07 16:18:46,474 INFO org.apache.kafka.common.metrics.Metrics [kafka-admin-client-thread | adminclient-1] Metrics reporters closed
+2022-05-07 16:18:46,480 INFO org.apache.kafka.clients.producer.ProducerConfig [restartedMain] Idempotence will be disabled because acks is set to 1, not set to 'all'.
+2022-05-07 16:18:46,481 INFO org.apache.kafka.common.config.AbstractConfig [restartedMain] ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+2022-05-07 16:18:46,502 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka version: 3.0.1
+2022-05-07 16:18:46,503 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka commitId: 8e30984f43e64d8b
+2022-05-07 16:18:46,503 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka startTimeMs: 1651920526502
+2022-05-07 16:18:46,509 INFO org.apache.kafka.clients.Metadata [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Resetting the last seen epoch of partition PRODUCT_TOPIC-0 to 0 since the associated topicId changed from null to 8pJDXN2yT12qC7Hxtze1RQ
+2022-05-07 16:18:46,510 INFO org.apache.kafka.clients.Metadata [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Cluster ID: Fg-suBJLRSO0cNl9srhg1A
+2022-05-07 16:18:46,516 INFO org.springframework.core.log.LogAccessor [restartedMain] Channel 'product.output' has 1 subscriber(s).
+2022-05-07 16:18:46,522 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2022-05-07 16:18:46,576 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region default
+2022-05-07 16:18:46,580 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2022-05-07 16:18:46,608 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2022-05-07 16:18:46,609 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2022-05-07 16:18:46,609 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2022-05-07 16:18:46,609 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2022-05-07 16:18:46,609 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2022-05-07 16:18:46,609 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2022-05-07 16:18:46,609 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2022-05-07 16:18:46,735 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2022-05-07 16:18:46,742 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2022-05-07 16:18:46,748 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-05-07 16:18:46,762 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1651920526761 with initial instances count: 6
+2022-05-07 16:18:46,764 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application PRODUCT with eureka with status UP
+2022-05-07 16:18:46,764 INFO com.netflix.discovery.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1651920526764, current=UP, previous=STARTING]
+2022-05-07 16:18:46,765 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8030"]
+2022-05-07 16:18:46,765 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_PRODUCT/DESKTOP-UP4G20T:product:8030: registering service...
+2022-05-07 16:18:46,774 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8030 (http) with context path ''
+2022-05-07 16:18:46,775 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 8030
+2022-05-07 16:18:46,797 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_PRODUCT/DESKTOP-UP4G20T:product:8030 - registration status: 204
+2022-05-07 16:18:46,847 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started EauctionHouseProductServiceApplication in 5.94 seconds (JVM running for 6.474)
+2022-05-07 16:19:07,144 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8030-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-07 16:19:07,145 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8030-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-05-07 16:19:07,148 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8030-exec-1] Completed initialization in 3 ms
+2022-05-07 16:19:07,248 INFO com.cts.eauction.microservices.product.services.ProductService [http-nio-8030-exec-1] productCommand=Product [id=40, productName=null, shortDescription=null, detailedDescription=null, category=null, startingPrice=null, bidEndDate=null, sellerId=null]
+2022-05-07 16:19:07,438 INFO com.cts.eauction.microservices.product.services.ProductService [http-nio-8030-exec-1] product Delete Event=ProductEvent [productId=40, productName=null, shortDescription=null, detailedDescription=null, category=null, startingPrice=null, bidEndDate=null, sellerId=null, id=dfc85b54-e9c5-499a-84f2-b46d977f1e48, created=Sat May 07 16:19:07 IST 2022, eventType=DELETE]
+2022-05-07 19:54:34,185 WARN com.netflix.discovery.TimedSupervisorTask [DiscoveryClient-0] task supervisor timed out
+java.util.concurrent.TimeoutException: null
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at com.netflix.discovery.TimedSupervisorTask.run(TimedSupervisorTask.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2022-05-07 19:54:46,047 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h32m1s481ms245탎400ns).
+2022-05-07 19:55:18,091 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-07 19:58:24,450 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 19:58:26,602 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 19:58:28,887 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 19:58:31,425 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 19:58:34,204 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 19:58:37,361 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 19:58:40,460 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 19:58:43,557 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 19:58:46,663 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 19:58:49,755 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 19:58:52,909 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 19:59:01,726 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 19:59:03,877 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 19:59:06,157 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 19:59:08,571 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 19:59:11,548 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 19:59:14,757 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 19:59:17,799 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 19:59:21,018 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 19:59:24,237 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 19:59:27,318 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 19:59:30,200 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 19:59:33,360 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 19:59:36,328 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 19:59:39,226 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 19:59:42,201 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 19:59:45,483 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 19:59:48,582 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 19:59:51,489 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 19:59:54,574 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 19:59:57,533 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 20:00:00,443 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 20:00:03,667 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 20:00:06,700 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 20:00:09,661 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 20:00:12,813 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 20:00:16,037 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 20:00:18,110 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-07 20:00:18,950 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 20:00:22,112 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 20:00:25,072 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 20:00:28,221 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 20:00:31,118 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 20:00:34,219 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 20:00:37,131 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 20:00:40,354 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 20:00:43,560 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 20:00:46,783 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 20:00:49,866 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 20:00:52,780 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 20:00:55,813 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 20:00:58,849 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 20:01:02,008 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 20:01:05,160 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 20:01:08,233 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 20:01:11,320 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (DESKTOP-UP4G20T/192.168.1.3:9092) could not be established. Broker may not be available.
+2022-05-07 20:10:31,190 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
+2022-05-07 20:10:31,197 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting EauctionHouseProductServiceApplication using Java 15.0.1 on DESKTOP-UP4G20T with PID 17576 (D:\Work\HackFSE-2022-v1\project-repo\eauction-house\eauction-house-product-service\build\classes\java\main started by supra in D:\Work\HackFSE-2022-v1\project-repo\eauction-house\eauction-house-product-service)
+2022-05-07 20:10:31,197 INFO org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2022-05-07 20:10:31,237 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Fetching config from server at : http://localhost:8888
+2022-05-07 20:10:31,243 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Located environment: name=product, profiles=[dev], label=null, version=null, state=null
+2022-05-07 20:10:31,245 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-07 20:10:31,246 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-07 20:10:31,811 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-07 20:10:31,901 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 84 ms. Found 1 JPA repository interfaces.
+2022-05-07 20:10:32,102 INFO org.springframework.core.log.LogAccessor [restartedMain] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2022-05-07 20:10:32,119 INFO org.springframework.core.log.LogAccessor [restartedMain] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2022-05-07 20:10:32,207 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=0c451613-8f78-35f8-9f3e-442cb85c5674
+2022-05-07 20:10:32,314 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 20:10:32,373 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 20:10:32,791 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8030 (http)
+2022-05-07 20:10:32,798 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8030"]
+2022-05-07 20:10:32,798 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-05-07 20:10:32,798 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-07 20:10:32,903 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-07 20:10:32,903 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1657 ms
+2022-05-07 20:10:33,006 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-07 20:10:33,044 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-05-07 20:10:33,171 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-07 20:10:33,238 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-05-07 20:10:33,438 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-05-07 20:10:33,451 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-05-07 20:10:33,865 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-07 20:10:33,872 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-07 20:10:34,253 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-07 20:10:34,572 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2022-05-07 20:10:34,669 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses RestTemplate.
+2022-05-07 20:10:34,819 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [restartedMain] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-05-07 20:10:34,844 INFO org.springframework.cloud.stream.function.FunctionConfiguration$FunctionBindingRegistrar [restartedMain] Functional binding is disabled due to the presense of @EnableBinding annotation in your configuration
+2022-05-07 20:10:34,951 INFO org.springframework.core.log.LogAccessor [restartedMain] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2022-05-07 20:10:34,951 INFO org.springframework.core.log.LogAccessor [restartedMain] Channel 'product.errorChannel' has 1 subscriber(s).
+2022-05-07 20:10:34,952 INFO org.springframework.core.log.LogAccessor [restartedMain] started bean '_org.springframework.integration.errorLogger'
+2022-05-07 20:10:34,953 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Creating binder: ktable
+2022-05-07 20:10:35,007 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Caching the binder: ktable
+2022-05-07 20:10:35,008 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Retrieving cached binder: ktable
+2022-05-07 20:10:35,008 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Creating binder: kafka
+2022-05-07 20:10:35,049 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Caching the binder: kafka
+2022-05-07 20:10:35,049 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Retrieving cached binder: kafka
+2022-05-07 20:10:35,049 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Creating binder: kstream
+2022-05-07 20:10:35,067 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Caching the binder: kstream
+2022-05-07 20:10:35,067 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Retrieving cached binder: kstream
+2022-05-07 20:10:35,067 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Creating binder: globalktable
+2022-05-07 20:10:35,091 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Caching the binder: globalktable
+2022-05-07 20:10:35,091 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Retrieving cached binder: globalktable
+2022-05-07 20:10:35,091 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Retrieving cached binder: kafka
+2022-05-07 20:10:35,125 INFO org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner [restartedMain] Using kafka topic for outbound: PRODUCT_TOPIC
+2022-05-07 20:10:35,128 INFO org.apache.kafka.common.config.AbstractConfig [restartedMain] AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-05-07 20:10:35,238 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka version: 3.0.1
+2022-05-07 20:10:35,238 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka commitId: 8e30984f43e64d8b
+2022-05-07 20:10:35,238 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka startTimeMs: 1651934435237
+2022-05-07 20:10:35,676 INFO org.apache.kafka.common.utils.AppInfoParser [kafka-admin-client-thread | adminclient-1] App info kafka.admin.client for adminclient-1 unregistered
+2022-05-07 20:10:35,679 INFO org.apache.kafka.common.metrics.Metrics [kafka-admin-client-thread | adminclient-1] Metrics scheduler closed
+2022-05-07 20:10:35,680 INFO org.apache.kafka.common.metrics.Metrics [kafka-admin-client-thread | adminclient-1] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-05-07 20:10:35,680 INFO org.apache.kafka.common.metrics.Metrics [kafka-admin-client-thread | adminclient-1] Metrics reporters closed
+2022-05-07 20:10:35,688 INFO org.apache.kafka.clients.producer.ProducerConfig [restartedMain] Idempotence will be disabled because acks is set to 1, not set to 'all'.
+2022-05-07 20:10:35,688 INFO org.apache.kafka.common.config.AbstractConfig [restartedMain] ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+2022-05-07 20:10:35,711 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka version: 3.0.1
+2022-05-07 20:10:35,711 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka commitId: 8e30984f43e64d8b
+2022-05-07 20:10:35,711 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka startTimeMs: 1651934435711
+2022-05-07 20:10:35,720 INFO org.apache.kafka.clients.Metadata [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Resetting the last seen epoch of partition PRODUCT_TOPIC-0 to 0 since the associated topicId changed from null to 8pJDXN2yT12qC7Hxtze1RQ
+2022-05-07 20:10:35,721 INFO org.apache.kafka.clients.Metadata [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Cluster ID: Fg-suBJLRSO0cNl9srhg1A
+2022-05-07 20:10:35,731 INFO org.springframework.core.log.LogAccessor [restartedMain] Channel 'product.output' has 1 subscriber(s).
+2022-05-07 20:10:35,737 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2022-05-07 20:10:35,794 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region default
+2022-05-07 20:10:35,801 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2022-05-07 20:10:35,828 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2022-05-07 20:10:35,828 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2022-05-07 20:10:35,828 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2022-05-07 20:10:35,828 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2022-05-07 20:10:35,828 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2022-05-07 20:10:35,828 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2022-05-07 20:10:35,829 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2022-05-07 20:10:35,959 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2022-05-07 20:10:35,966 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2022-05-07 20:10:35,973 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-05-07 20:10:35,987 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1651934435986 with initial instances count: 2
+2022-05-07 20:10:35,989 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application PRODUCT with eureka with status UP
+2022-05-07 20:10:35,989 INFO com.netflix.discovery.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1651934435989, current=UP, previous=STARTING]
+2022-05-07 20:10:35,991 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_PRODUCT/DESKTOP-UP4G20T:product:8030: registering service...
+2022-05-07 20:10:35,992 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8030"]
+2022-05-07 20:10:36,001 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8030 (http) with context path ''
+2022-05-07 20:10:36,002 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 8030
+2022-05-07 20:10:36,026 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_PRODUCT/DESKTOP-UP4G20T:product:8030 - registration status: 204
+2022-05-07 20:10:36,076 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started EauctionHouseProductServiceApplication in 5.815 seconds (JVM running for 6.363)
+2022-05-07 20:15:35,838 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-07 20:18:33,096 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8030-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-07 20:18:33,098 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8030-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-05-07 20:18:33,219 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8030-exec-1] Completed initialization in 119 ms
+2022-05-07 20:18:33,532 INFO com.cts.eauction.microservices.product.services.ProductService [http-nio-8030-exec-1] productCommand=Product [id=41, productName=null, shortDescription=null, detailedDescription=null, category=null, startingPrice=null, bidEndDate=null, sellerId=null]
+2022-05-07 20:18:34,101 INFO com.cts.eauction.microservices.product.services.ProductService [http-nio-8030-exec-1] product Delete Event=ProductEvent [productId=41, productName=null, shortDescription=null, detailedDescription=null, category=null, startingPrice=null, bidEndDate=null, sellerId=null, id=b7daaa29-afc4-419f-a3d1-e7cfd6a20f89, created=Sat May 07 20:18:34 IST 2022, eventType=DELETE]
+2022-05-07 20:20:35,882 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-07 20:25:35,897 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-07 20:27:36,546 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m32s762ms672탎900ns).
+2022-05-07 20:31:39,730 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-07 20:36:39,744 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-07 20:41:39,753 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-07 20:46:39,761 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-07 21:11:08,097 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=23m224ms364탎500ns).
+2022-05-07 21:13:34,819 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting EauctionHouseProductServiceApplication using Java 15.0.1 on DESKTOP-UP4G20T with PID 23984 (D:\Work\HackFSE-2022-v1\project-repo\eauction-house\eauction-house-product-service\build\classes\java\main started by supra in D:\Work\HackFSE-2022-v1\project-repo\eauction-house\eauction-house-product-service)
+2022-05-07 21:13:34,821 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
+2022-05-07 21:13:34,821 INFO org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2022-05-07 21:13:34,874 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Fetching config from server at : http://localhost:8888
+2022-05-07 21:13:34,874 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Located environment: name=product, profiles=[dev], label=null, version=null, state=null
+2022-05-07 21:13:34,876 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-07 21:13:34,876 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-07 21:13:35,670 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-07 21:13:35,798 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 120 ms. Found 1 JPA repository interfaces.
+2022-05-07 21:13:36,043 INFO org.springframework.core.log.LogAccessor [restartedMain] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2022-05-07 21:13:36,061 INFO org.springframework.core.log.LogAccessor [restartedMain] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2022-05-07 21:13:36,175 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=04bd07d8-6a83-31e3-8c46-729e949aafa0
+2022-05-07 21:13:36,331 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 21:13:36,415 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 21:13:37,043 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8030 (http)
+2022-05-07 21:13:37,055 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8030"]
+2022-05-07 21:13:37,055 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-05-07 21:13:37,056 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-07 21:13:37,202 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-07 21:13:37,202 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2326 ms
+2022-05-07 21:13:37,341 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-07 21:13:37,408 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-05-07 21:13:37,595 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-07 21:13:37,703 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-05-07 21:13:38,005 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-05-07 21:13:38,025 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-05-07 21:13:38,611 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-07 21:13:38,618 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-07 21:13:39,066 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-07 21:13:39,479 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2022-05-07 21:13:39,588 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses RestTemplate.
+2022-05-07 21:13:39,755 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [restartedMain] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-05-07 21:13:39,793 INFO org.springframework.cloud.stream.function.FunctionConfiguration$FunctionBindingRegistrar [restartedMain] Functional binding is disabled due to the presense of @EnableBinding annotation in your configuration
+2022-05-07 21:13:39,929 INFO org.springframework.core.log.LogAccessor [restartedMain] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2022-05-07 21:13:39,930 INFO org.springframework.core.log.LogAccessor [restartedMain] Channel 'product.errorChannel' has 1 subscriber(s).
+2022-05-07 21:13:39,930 INFO org.springframework.core.log.LogAccessor [restartedMain] started bean '_org.springframework.integration.errorLogger'
+2022-05-07 21:13:39,931 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Creating binder: ktable
+2022-05-07 21:13:40,012 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Caching the binder: ktable
+2022-05-07 21:13:40,012 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Retrieving cached binder: ktable
+2022-05-07 21:13:40,013 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Creating binder: kafka
+2022-05-07 21:13:40,056 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Caching the binder: kafka
+2022-05-07 21:13:40,056 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Retrieving cached binder: kafka
+2022-05-07 21:13:40,056 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Creating binder: kstream
+2022-05-07 21:13:40,073 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Caching the binder: kstream
+2022-05-07 21:13:40,073 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Retrieving cached binder: kstream
+2022-05-07 21:13:40,073 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Creating binder: globalktable
+2022-05-07 21:13:40,104 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Caching the binder: globalktable
+2022-05-07 21:13:40,104 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Retrieving cached binder: globalktable
+2022-05-07 21:13:40,104 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Retrieving cached binder: kafka
+2022-05-07 21:13:40,152 INFO org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner [restartedMain] Using kafka topic for outbound: PRODUCT_TOPIC
+2022-05-07 21:13:40,156 INFO org.apache.kafka.common.config.AbstractConfig [restartedMain] AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-05-07 21:13:40,330 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka version: 3.0.1
+2022-05-07 21:13:40,330 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka commitId: 8e30984f43e64d8b
+2022-05-07 21:13:40,330 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka startTimeMs: 1651938220328
+2022-05-07 21:13:40,842 INFO org.apache.kafka.common.utils.AppInfoParser [kafka-admin-client-thread | adminclient-1] App info kafka.admin.client for adminclient-1 unregistered
+2022-05-07 21:13:40,845 INFO org.apache.kafka.common.metrics.Metrics [kafka-admin-client-thread | adminclient-1] Metrics scheduler closed
+2022-05-07 21:13:40,845 INFO org.apache.kafka.common.metrics.Metrics [kafka-admin-client-thread | adminclient-1] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-05-07 21:13:40,845 INFO org.apache.kafka.common.metrics.Metrics [kafka-admin-client-thread | adminclient-1] Metrics reporters closed
+2022-05-07 21:13:40,852 INFO org.apache.kafka.clients.producer.ProducerConfig [restartedMain] Idempotence will be disabled because acks is set to 1, not set to 'all'.
+2022-05-07 21:13:40,853 INFO org.apache.kafka.common.config.AbstractConfig [restartedMain] ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+2022-05-07 21:13:40,875 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka version: 3.0.1
+2022-05-07 21:13:40,875 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka commitId: 8e30984f43e64d8b
+2022-05-07 21:13:40,876 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka startTimeMs: 1651938220875
+2022-05-07 21:13:40,883 INFO org.apache.kafka.clients.Metadata [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Resetting the last seen epoch of partition PRODUCT_TOPIC-0 to 0 since the associated topicId changed from null to 8pJDXN2yT12qC7Hxtze1RQ
+2022-05-07 21:13:40,884 INFO org.apache.kafka.clients.Metadata [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Cluster ID: Fg-suBJLRSO0cNl9srhg1A
+2022-05-07 21:13:40,892 INFO org.springframework.core.log.LogAccessor [restartedMain] Channel 'product.output' has 1 subscriber(s).
+2022-05-07 21:13:40,902 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2022-05-07 21:13:40,976 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region default
+2022-05-07 21:13:40,982 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2022-05-07 21:13:41,023 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2022-05-07 21:13:41,023 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2022-05-07 21:13:41,023 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2022-05-07 21:13:41,023 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2022-05-07 21:13:41,023 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2022-05-07 21:13:41,023 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2022-05-07 21:13:41,023 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2022-05-07 21:13:41,231 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2022-05-07 21:13:41,236 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2022-05-07 21:13:41,242 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-05-07 21:13:41,253 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1651938221251 with initial instances count: 6
+2022-05-07 21:13:41,255 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application PRODUCT with eureka with status UP
+2022-05-07 21:13:41,255 INFO com.netflix.discovery.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1651938221255, current=UP, previous=STARTING]
+2022-05-07 21:13:41,264 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_PRODUCT/DESKTOP-UP4G20T:product:8030: registering service...
+2022-05-07 21:13:41,264 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8030"]
+2022-05-07 21:13:41,278 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8030 (http) with context path ''
+2022-05-07 21:13:41,279 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 8030
+2022-05-07 21:13:41,354 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_PRODUCT/DESKTOP-UP4G20T:product:8030 - registration status: 204
+2022-05-07 21:13:41,381 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started EauctionHouseProductServiceApplication in 8.129 seconds (JVM running for 8.797)
+2022-05-07 21:14:32,489 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8030-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-07 21:14:32,490 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8030-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-05-07 21:14:32,495 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8030-exec-1] Completed initialization in 4 ms
+2022-05-07 21:14:32,594 INFO com.cts.eauction.microservices.product.services.ProductService [http-nio-8030-exec-1] productCommand=Product [id=41, productName=null, shortDescription=null, detailedDescription=null, category=null, startingPrice=null, bidEndDate=null, sellerId=null]
+2022-05-07 21:14:32,795 INFO com.cts.eauction.microservices.product.services.ProductService [http-nio-8030-exec-1] product Delete Event=ProductEvent [productId=41, productName=null, shortDescription=null, detailedDescription=null, category=null, startingPrice=null, bidEndDate=null, sellerId=null, id=08f310ea-cafd-45a8-b704-76c610cd8713, created=Sat May 07 21:14:32 IST 2022, eventType=DELETE]
+2022-05-07 21:18:41,035 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-07 21:20:41,581 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting EauctionHouseProductServiceApplication using Java 15.0.1 on DESKTOP-UP4G20T with PID 15232 (D:\Work\HackFSE-2022-v1\project-repo\eauction-house\eauction-house-product-service\build\classes\java\main started by supra in D:\Work\HackFSE-2022-v1\project-repo\eauction-house\eauction-house-product-service)
+2022-05-07 21:20:41,583 INFO org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2022-05-07 21:20:41,585 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
+2022-05-07 21:20:41,617 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Fetching config from server at : http://localhost:8888
+2022-05-07 21:20:41,617 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Located environment: name=product, profiles=[dev], label=null, version=null, state=null
+2022-05-07 21:20:41,618 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-07 21:20:41,619 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-07 21:20:42,154 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-07 21:20:42,249 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 90 ms. Found 1 JPA repository interfaces.
+2022-05-07 21:20:42,427 INFO org.springframework.core.log.LogAccessor [restartedMain] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2022-05-07 21:20:42,436 INFO org.springframework.core.log.LogAccessor [restartedMain] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2022-05-07 21:20:42,512 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=a6b609f9-def7-3f21-9db0-22621c81acc6
+2022-05-07 21:20:42,618 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 21:20:42,667 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 21:20:43,146 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8030 (http)
+2022-05-07 21:20:43,156 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8030"]
+2022-05-07 21:20:43,156 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-05-07 21:20:43,157 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-07 21:20:43,271 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-07 21:20:43,272 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1653 ms
+2022-05-07 21:20:43,384 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-07 21:20:43,449 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-05-07 21:20:43,649 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-07 21:20:43,755 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-05-07 21:20:44,057 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-05-07 21:20:44,074 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-05-07 21:20:44,549 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-07 21:20:44,555 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-07 21:20:44,883 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-07 21:20:45,183 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2022-05-07 21:20:45,275 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses RestTemplate.
+2022-05-07 21:20:45,411 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [restartedMain] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-05-07 21:20:45,437 INFO org.springframework.cloud.stream.function.FunctionConfiguration$FunctionBindingRegistrar [restartedMain] Functional binding is disabled due to the presense of @EnableBinding annotation in your configuration
+2022-05-07 21:20:45,537 INFO org.springframework.core.log.LogAccessor [restartedMain] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2022-05-07 21:20:45,538 INFO org.springframework.core.log.LogAccessor [restartedMain] Channel 'product.errorChannel' has 1 subscriber(s).
+2022-05-07 21:20:45,538 INFO org.springframework.core.log.LogAccessor [restartedMain] started bean '_org.springframework.integration.errorLogger'
+2022-05-07 21:20:45,539 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Creating binder: ktable
+2022-05-07 21:20:45,589 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Caching the binder: ktable
+2022-05-07 21:20:45,589 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Retrieving cached binder: ktable
+2022-05-07 21:20:45,589 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Creating binder: kafka
+2022-05-07 21:20:45,627 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Caching the binder: kafka
+2022-05-07 21:20:45,627 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Retrieving cached binder: kafka
+2022-05-07 21:20:45,627 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Creating binder: kstream
+2022-05-07 21:20:45,644 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Caching the binder: kstream
+2022-05-07 21:20:45,645 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Retrieving cached binder: kstream
+2022-05-07 21:20:45,645 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Creating binder: globalktable
+2022-05-07 21:20:45,670 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Caching the binder: globalktable
+2022-05-07 21:20:45,670 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Retrieving cached binder: globalktable
+2022-05-07 21:20:45,670 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Retrieving cached binder: kafka
+2022-05-07 21:20:45,704 INFO org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner [restartedMain] Using kafka topic for outbound: PRODUCT_TOPIC
+2022-05-07 21:20:45,707 INFO org.apache.kafka.common.config.AbstractConfig [restartedMain] AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-05-07 21:20:45,823 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka version: 3.0.1
+2022-05-07 21:20:45,823 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka commitId: 8e30984f43e64d8b
+2022-05-07 21:20:45,823 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka startTimeMs: 1651938645822
+2022-05-07 21:20:46,204 INFO org.apache.kafka.common.utils.AppInfoParser [kafka-admin-client-thread | adminclient-1] App info kafka.admin.client for adminclient-1 unregistered
+2022-05-07 21:20:46,208 INFO org.apache.kafka.common.metrics.Metrics [kafka-admin-client-thread | adminclient-1] Metrics scheduler closed
+2022-05-07 21:20:46,208 INFO org.apache.kafka.common.metrics.Metrics [kafka-admin-client-thread | adminclient-1] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-05-07 21:20:46,208 INFO org.apache.kafka.common.metrics.Metrics [kafka-admin-client-thread | adminclient-1] Metrics reporters closed
+2022-05-07 21:20:46,214 INFO org.apache.kafka.clients.producer.ProducerConfig [restartedMain] Idempotence will be disabled because acks is set to 1, not set to 'all'.
+2022-05-07 21:20:46,214 INFO org.apache.kafka.common.config.AbstractConfig [restartedMain] ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+2022-05-07 21:20:46,233 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka version: 3.0.1
+2022-05-07 21:20:46,233 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka commitId: 8e30984f43e64d8b
+2022-05-07 21:20:46,233 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka startTimeMs: 1651938646233
+2022-05-07 21:20:46,240 INFO org.apache.kafka.clients.Metadata [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Resetting the last seen epoch of partition PRODUCT_TOPIC-0 to 0 since the associated topicId changed from null to 8pJDXN2yT12qC7Hxtze1RQ
+2022-05-07 21:20:46,241 INFO org.apache.kafka.clients.Metadata [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Cluster ID: Fg-suBJLRSO0cNl9srhg1A
+2022-05-07 21:20:46,247 INFO org.springframework.core.log.LogAccessor [restartedMain] Channel 'product.output' has 1 subscriber(s).
+2022-05-07 21:20:46,257 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2022-05-07 21:20:46,313 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region default
+2022-05-07 21:20:46,316 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2022-05-07 21:20:46,349 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2022-05-07 21:20:46,349 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2022-05-07 21:20:46,349 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2022-05-07 21:20:46,349 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2022-05-07 21:20:46,349 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2022-05-07 21:20:46,349 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2022-05-07 21:20:46,349 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2022-05-07 21:20:46,492 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2022-05-07 21:20:46,499 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2022-05-07 21:20:46,505 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-05-07 21:20:46,521 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1651938646519 with initial instances count: 6
+2022-05-07 21:20:46,522 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application PRODUCT with eureka with status UP
+2022-05-07 21:20:46,523 INFO com.netflix.discovery.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1651938646523, current=UP, previous=STARTING]
+2022-05-07 21:20:46,524 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_PRODUCT/DESKTOP-UP4G20T:product:8030: registering service...
+2022-05-07 21:20:46,524 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8030"]
+2022-05-07 21:20:46,532 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8030 (http) with context path ''
+2022-05-07 21:20:46,533 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 8030
+2022-05-07 21:20:46,559 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_PRODUCT/DESKTOP-UP4G20T:product:8030 - registration status: 204
+2022-05-07 21:20:46,602 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started EauctionHouseProductServiceApplication in 6.037 seconds (JVM running for 6.526)
+2022-05-07 21:21:29,453 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8030-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-07 21:21:29,454 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8030-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-05-07 21:21:29,456 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8030-exec-2] Completed initialization in 2 ms
+2022-05-07 21:21:29,533 INFO com.cts.eauction.microservices.product.services.ProductService [http-nio-8030-exec-2] productCommand=Product [id=41, productName=null, shortDescription=null, detailedDescription=null, category=null, startingPrice=null, bidEndDate=null, sellerId=null]
+2022-05-07 21:21:29,712 INFO com.cts.eauction.microservices.product.services.ProductService [http-nio-8030-exec-2] product Delete Event=ProductEvent [productId=41, productName=null, shortDescription=null, detailedDescription=null, category=null, startingPrice=null, bidEndDate=null, sellerId=null, id=19a1c79a-9911-41b8-b722-58d27efec326, created=Sat May 07 21:21:29 IST 2022, eventType=DELETE]
+2022-05-07 21:25:46,362 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-07 21:27:42,440 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
+2022-05-07 21:27:42,442 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting EauctionHouseProductServiceApplication using Java 15.0.1 on DESKTOP-UP4G20T with PID 22056 (D:\Work\HackFSE-2022-v1\project-repo\eauction-house\eauction-house-product-service\build\classes\java\main started by supra in D:\Work\HackFSE-2022-v1\project-repo\eauction-house\eauction-house-product-service)
+2022-05-07 21:27:42,443 INFO org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2022-05-07 21:27:42,485 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Fetching config from server at : http://localhost:8888
+2022-05-07 21:27:42,485 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Located environment: name=product, profiles=[dev], label=null, version=null, state=null
+2022-05-07 21:27:42,486 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-07 21:27:42,487 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-07 21:27:43,003 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-07 21:27:43,117 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 107 ms. Found 1 JPA repository interfaces.
+2022-05-07 21:27:43,297 INFO org.springframework.core.log.LogAccessor [restartedMain] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2022-05-07 21:27:43,304 INFO org.springframework.core.log.LogAccessor [restartedMain] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2022-05-07 21:27:43,389 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=a6b609f9-def7-3f21-9db0-22621c81acc6
+2022-05-07 21:27:43,498 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 21:27:43,547 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 21:27:43,973 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8030 (http)
+2022-05-07 21:27:43,981 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8030"]
+2022-05-07 21:27:43,982 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-05-07 21:27:43,982 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-07 21:27:44,101 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-07 21:27:44,101 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1613 ms
+2022-05-07 21:27:44,224 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-07 21:27:44,293 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-05-07 21:27:44,484 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-07 21:27:44,567 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-05-07 21:27:44,872 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-05-07 21:27:44,889 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-05-07 21:27:45,410 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-07 21:27:45,416 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-07 21:27:45,779 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-07 21:27:46,124 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2022-05-07 21:27:46,220 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses RestTemplate.
+2022-05-07 21:27:46,380 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [restartedMain] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-05-07 21:27:46,405 INFO org.springframework.cloud.stream.function.FunctionConfiguration$FunctionBindingRegistrar [restartedMain] Functional binding is disabled due to the presense of @EnableBinding annotation in your configuration
+2022-05-07 21:27:46,500 INFO org.springframework.core.log.LogAccessor [restartedMain] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2022-05-07 21:27:46,500 INFO org.springframework.core.log.LogAccessor [restartedMain] Channel 'product.errorChannel' has 1 subscriber(s).
+2022-05-07 21:27:46,500 INFO org.springframework.core.log.LogAccessor [restartedMain] started bean '_org.springframework.integration.errorLogger'
+2022-05-07 21:27:46,501 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Creating binder: ktable
+2022-05-07 21:27:46,554 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Caching the binder: ktable
+2022-05-07 21:27:46,554 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Retrieving cached binder: ktable
+2022-05-07 21:27:46,554 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Creating binder: kafka
+2022-05-07 21:27:46,610 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Caching the binder: kafka
+2022-05-07 21:27:46,611 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Retrieving cached binder: kafka
+2022-05-07 21:27:46,611 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Creating binder: kstream
+2022-05-07 21:27:46,632 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Caching the binder: kstream
+2022-05-07 21:27:46,634 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Retrieving cached binder: kstream
+2022-05-07 21:27:46,634 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Creating binder: globalktable
+2022-05-07 21:27:46,659 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Caching the binder: globalktable
+2022-05-07 21:27:46,660 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Retrieving cached binder: globalktable
+2022-05-07 21:27:46,661 INFO org.springframework.cloud.stream.binder.DefaultBinderFactory [restartedMain] Retrieving cached binder: kafka
+2022-05-07 21:27:46,696 INFO org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner [restartedMain] Using kafka topic for outbound: PRODUCTS_ON_AUCTION
+2022-05-07 21:27:46,698 INFO org.apache.kafka.common.config.AbstractConfig [restartedMain] AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-05-07 21:27:46,805 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka version: 3.0.1
+2022-05-07 21:27:46,805 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka commitId: 8e30984f43e64d8b
+2022-05-07 21:27:46,805 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka startTimeMs: 1651939066804
+2022-05-07 21:27:47,204 INFO org.apache.kafka.common.utils.AppInfoParser [kafka-admin-client-thread | adminclient-1] App info kafka.admin.client for adminclient-1 unregistered
+2022-05-07 21:27:47,207 INFO org.apache.kafka.common.metrics.Metrics [kafka-admin-client-thread | adminclient-1] Metrics scheduler closed
+2022-05-07 21:27:47,207 INFO org.apache.kafka.common.metrics.Metrics [kafka-admin-client-thread | adminclient-1] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-05-07 21:27:47,207 INFO org.apache.kafka.common.metrics.Metrics [kafka-admin-client-thread | adminclient-1] Metrics reporters closed
+2022-05-07 21:27:47,215 INFO org.apache.kafka.clients.producer.ProducerConfig [restartedMain] Idempotence will be disabled because acks is set to 1, not set to 'all'.
+2022-05-07 21:27:47,216 INFO org.apache.kafka.common.config.AbstractConfig [restartedMain] ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+2022-05-07 21:27:47,239 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka version: 3.0.1
+2022-05-07 21:27:47,240 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka commitId: 8e30984f43e64d8b
+2022-05-07 21:27:47,240 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka startTimeMs: 1651939067239
+2022-05-07 21:27:47,249 INFO org.apache.kafka.clients.Metadata [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Resetting the last seen epoch of partition PRODUCTS_ON_AUCTION-0 to 0 since the associated topicId changed from null to dpooxllMSyGxqYtu52bpZg
+2022-05-07 21:27:47,251 INFO org.apache.kafka.clients.Metadata [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Cluster ID: Fg-suBJLRSO0cNl9srhg1A
+2022-05-07 21:27:47,263 INFO org.springframework.core.log.LogAccessor [restartedMain] Channel 'product.output' has 1 subscriber(s).
+2022-05-07 21:27:47,288 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2022-05-07 21:27:47,335 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region default
+2022-05-07 21:27:47,338 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2022-05-07 21:27:47,366 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2022-05-07 21:27:47,366 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2022-05-07 21:27:47,366 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2022-05-07 21:27:47,367 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2022-05-07 21:27:47,367 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2022-05-07 21:27:47,367 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2022-05-07 21:27:47,367 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2022-05-07 21:27:47,500 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2022-05-07 21:27:47,508 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2022-05-07 21:27:47,515 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-05-07 21:27:47,530 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1651939067530 with initial instances count: 6
+2022-05-07 21:27:47,533 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application PRODUCT with eureka with status UP
+2022-05-07 21:27:47,533 INFO com.netflix.discovery.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1651939067533, current=UP, previous=STARTING]
+2022-05-07 21:27:47,534 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_PRODUCT/DESKTOP-UP4G20T:product:8030: registering service...
+2022-05-07 21:27:47,535 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8030"]
+2022-05-07 21:27:47,547 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8030 (http) with context path ''
+2022-05-07 21:27:47,548 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 8030
+2022-05-07 21:27:47,573 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_PRODUCT/DESKTOP-UP4G20T:product:8030 - registration status: 204
+2022-05-07 21:27:47,634 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started EauctionHouseProductServiceApplication in 6.563 seconds (JVM running for 7.064)
+2022-05-07 21:28:20,576 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8030-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-07 21:28:20,576 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8030-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-05-07 21:28:20,578 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8030-exec-1] Completed initialization in 2 ms
+2022-05-07 21:28:20,664 INFO com.cts.eauction.microservices.product.services.ProductService [http-nio-8030-exec-1] productCommand=Product [id=41, productName=null, shortDescription=null, detailedDescription=null, category=null, startingPrice=null, bidEndDate=null, sellerId=null]
+2022-05-07 21:28:20,880 INFO com.cts.eauction.microservices.product.services.ProductService [http-nio-8030-exec-1] product Delete Event=ProductEvent [productId=41, productName=null, shortDescription=null, detailedDescription=null, category=null, startingPrice=null, bidEndDate=null, sellerId=null, id=5faedab7-9e36-4068-9fd7-a4e2605a22b7, created=Sat May 07 21:28:20 IST 2022, eventType=DELETE]
+2022-05-07 21:32:47,383 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-07 21:35:50,010 INFO com.cts.eauction.microservices.product.services.ProductService [http-nio-8030-exec-2] productCommand=Product [id=41, productName=null, shortDescription=null, detailedDescription=null, category=null, startingPrice=null, bidEndDate=null, sellerId=null]
+2022-05-07 21:35:50,015 INFO com.cts.eauction.microservices.product.services.ProductService [http-nio-8030-exec-2] product Delete Event=ProductEvent [productId=41, productName=null, shortDescription=null, detailedDescription=null, category=null, startingPrice=null, bidEndDate=null, sellerId=null, id=ca392467-6be5-44da-87c4-6bd9282ff263, created=Sat May 07 21:35:50 IST 2022, eventType=DELETE]
+2022-05-07 21:37:47,392 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-07 21:39:20,532 INFO com.cts.eauction.microservices.product.services.ProductService [http-nio-8030-exec-5] productCommand=Product [id=41, productName=null, shortDescription=null, detailedDescription=null, category=null, startingPrice=null, bidEndDate=null, sellerId=null]
+2022-05-07 21:39:20,541 INFO com.cts.eauction.microservices.product.services.ProductService [http-nio-8030-exec-5] product Delete Event=ProductEvent [productId=41, productName=null, shortDescription=null, detailedDescription=null, category=null, startingPrice=null, bidEndDate=null, sellerId=null, id=b9905c3a-b02f-404f-a495-9a6d9f9d698d, created=Sat May 07 21:39:20 IST 2022, eventType=DELETE]
+2022-05-07 21:46:06,447 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m51s247ms637탎200ns).
+2022-05-07 22:46:13,331 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h6s893ms923탎600ns).
+2022-05-07 22:47:45,362 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-07 22:52:45,378 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-07 22:55:03,564 INFO com.cts.eauction.microservices.product.services.ProductService [http-nio-8030-exec-10] productCommand=Product [id=41, productName=null, shortDescription=null, detailedDescription=null, category=null, startingPrice=null, bidEndDate=null, sellerId=null]
+2022-05-07 22:55:03,679 INFO com.cts.eauction.microservices.product.services.ProductService [http-nio-8030-exec-10] product Delete Event=ProductEvent [productId=41, productName=null, shortDescription=null, detailedDescription=null, category=null, startingPrice=null, bidEndDate=null, sellerId=null, id=38e63cbb-6871-4fed-98c7-6c516cb23baa, created=Sat May 07 22:55:03 IST 2022, eventType=DELETE]
+2022-05-07 22:55:03,734 INFO org.apache.kafka.clients.Metadata [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Resetting the last seen epoch of partition PRODUCTS_ON_AUCTION-0 to 0 since the associated topicId changed from null to dpooxllMSyGxqYtu52bpZg
