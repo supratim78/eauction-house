@@ -8,6 +8,11 @@ import org.springframework.context.annotation.Configuration;
 
 import com.cts.eauction.microservices.gateway.filter.JwtAuthenticationFilter;
 
+import java.util.Arrays;
+import java.util.Collections;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.reactive.CorsWebFilter;
+
 @Configuration
 public class GatewayConfig {
 
