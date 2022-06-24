@@ -22,4 +22,19 @@ public class GatewayConfig {
 				.route("LISTING", r -> r.path("/e-auction/api/v1/seller/show-bids/**").filters(f -> f.filter(filter)).uri("http://localhost:8060/"))
 				.route("AUTH", r -> r.path("/e-auction/api/v1/user/**").filters(f -> f.filter(filter)).uri("http://localhost:8090/")).build();
 	}
+	
+	@Bean
+    public CorsWebFilter corsWebFilter() {
+
+        final CorsConfiguration corsConfig = new CorsConfiguration();
+        corsConfig.setAllowedOrigins(Collections.singletonList("*"));
+        corsConfig.setMaxAge(3600L);
+        corsConfig.setAllowedMethods(Arrays.asList("GET", "POST"));
+        corsConfig.addAllowedHeader("*");
+
+        final UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+        source.registerCorsConfiguration("/**", corsConfig);
+
+        return new CorsWebFilter(source);
+    }  
 }
