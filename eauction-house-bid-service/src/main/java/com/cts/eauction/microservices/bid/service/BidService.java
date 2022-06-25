@@ -31,8 +31,8 @@ public class BidService {
 		
 		LOG.info("After saving BidCommand" + bid);
 		
-		BidEvent bidEvent = new BidEvent(bid.getId(), bid.getProductId(), 
-				bid.getBidAmount(), bid.getBuyerId(),EventType.PLACEBID.getType());
+		BidEvent bidEvent = new BidEvent(bid.getId(), bid.getProductId(), bid.getBidAmount(), bid.getBuyerId(),
+				EventType.PLACEBID.getType(), bid.getBuyerName(), bid.getBuyerPhone(), bid.getBuyerEmail());
 		
 		LOG.info("After creating Bid Event" + bidEvent);
 		
@@ -47,8 +47,9 @@ public class BidService {
 		
 		BidCommand updatedBid = bidAggregate.updateBid(bidCommand);
 		
-		BidEvent bidEvent = new BidEvent(updatedBid.getId(), updatedBid.getProductId(), 
-				updatedBid.getBidAmount(), updatedBid.getBuyerId(),EventType.UPDATEBID.getType());
+		BidEvent bidEvent = new BidEvent(updatedBid.getId(), updatedBid.getProductId(), updatedBid.getBidAmount(),
+				updatedBid.getBuyerId(), EventType.UPDATEBID.getType(), updatedBid.getBuyerName(), updatedBid.getBuyerPhone(),
+				updatedBid.getBuyerEmail());
 		
 		LOG.info("Update bid event object " + bidEvent);
 		
