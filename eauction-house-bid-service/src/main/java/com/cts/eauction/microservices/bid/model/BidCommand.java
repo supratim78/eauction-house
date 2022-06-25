@@ -5,6 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 import org.hibernate.annotations.GenericGenerator;
 
@@ -19,17 +20,27 @@ public class BidCommand {
 	private Integer productId;
 	private Integer bidAmount;
 	private Integer buyerId;
+	@Transient
+	private String buyerName;
+	@Transient
+	private String buyerPhone;
+	@Transient
+	private String buyerEmail;
 
 	public BidCommand() {
 
 	}
 
-	public BidCommand(Integer id, Integer productId, Integer bidAmount, Integer buyerId) {
+	public BidCommand(Integer id, Integer productId, Integer bidAmount, Integer buyerId, String buyerName,
+			String buyerPhone, String buyerEmail) {
 		super();
 		this.id = id;
 		this.productId = productId;
 		this.bidAmount = bidAmount;
 		this.buyerId = buyerId;
+		this.buyerName = buyerName;
+		this.buyerPhone = buyerPhone;
+		this.buyerEmail = buyerEmail;
 	}
 
 	public Integer getId() {
@@ -63,15 +74,42 @@ public class BidCommand {
 	public void setBuyerId(Integer buyerId) {
 		this.buyerId = buyerId;
 	}
+	
+	public String getBuyerName() {
+		return buyerName;
+	}
+
+	public void setBuyerName(String buyerName) {
+		this.buyerName = buyerName;
+	}
+
+	public String getBuyerPhone() {
+		return buyerPhone;
+	}
+
+	public void setBuyerPhone(String buyerPhone) {
+		this.buyerPhone = buyerPhone;
+	}
+
+	public String getBuyerEmail() {
+		return buyerEmail;
+	}
+
+	public void setBuyerEmail(String buyerEmail) {
+		this.buyerEmail = buyerEmail;
+	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((bidAmount == null) ? 0 : bidAmount.hashCode());
+		result = prime * result + ((buyerEmail == null) ? 0 : buyerEmail.hashCode());
+		result = prime * result + ((buyerId == null) ? 0 : buyerId.hashCode());
+		result = prime * result + ((buyerName == null) ? 0 : buyerName.hashCode());
+		result = prime * result + ((buyerPhone == null) ? 0 : buyerPhone.hashCode());
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		result = prime * result + ((productId == null) ? 0 : productId.hashCode());
-		result = prime * result + ((buyerId == null) ? 0 : buyerId.hashCode());
 		return result;
 	}
 
@@ -89,6 +127,26 @@ public class BidCommand {
 				return false;
 		} else if (!bidAmount.equals(other.bidAmount))
 			return false;
+		if (buyerEmail == null) {
+			if (other.buyerEmail != null)
+				return false;
+		} else if (!buyerEmail.equals(other.buyerEmail))
+			return false;
+		if (buyerId == null) {
+			if (other.buyerId != null)
+				return false;
+		} else if (!buyerId.equals(other.buyerId))
+			return false;
+		if (buyerName == null) {
+			if (other.buyerName != null)
+				return false;
+		} else if (!buyerName.equals(other.buyerName))
+			return false;
+		if (buyerPhone == null) {
+			if (other.buyerPhone != null)
+				return false;
+		} else if (!buyerPhone.equals(other.buyerPhone))
+			return false;
 		if (id == null) {
 			if (other.id != null)
 				return false;
@@ -99,17 +157,12 @@ public class BidCommand {
 				return false;
 		} else if (!productId.equals(other.productId))
 			return false;
-		if (buyerId == null) {
-			if (other.buyerId != null)
-				return false;
-		} else if (!buyerId.equals(other.buyerId))
-			return false;
 		return true;
 	}
 
 	@Override
 	public String toString() {
-		return "Bid [id=" + id + ", productid=" + productId + ", bidAmount=" + bidAmount + ", sellerId=" + buyerId
-				+ "]";
+		return "BidCommand [id=" + id + ", productId=" + productId + ", bidAmount=" + bidAmount + ", buyerId=" + buyerId
+				+ ", buyerName=" + buyerName + ", buyerPhone=" + buyerPhone + ", buyerEmail=" + buyerEmail + "]";
 	}
 }
