@@ -5,6 +5,8 @@ import java.util.List;
 
 public class Listing {
 	
+	private Integer productId;
+	private String productName;
 	private String shortDescription;
 	private String detailedDescription;
 	private String category;
@@ -16,15 +18,33 @@ public class Listing {
 		
 	}
 
-	public Listing(String shortDescription, String detailedDescription,
+	public Listing(Integer productId, String productName, String shortDescription, String detailedDescription,
 			String category, Integer startingPrice, LocalDate bidEndDate, List<BidDetails> bidDetails) {
 		super();
+		this.productId = productId;
+		this.productName = productName;
 		this.shortDescription = shortDescription;
 		this.detailedDescription = detailedDescription;
 		this.category = category;
 		this.startingPrice = startingPrice;
 		this.bidEndDate = bidEndDate;
 		this.bidDetails = bidDetails;
+	}
+	
+	public Integer getProductId() {
+		return productId;
+	}
+
+	public void setProductId(Integer productId) {
+		this.productId = productId;
+	}
+
+	public String getProductName() {
+		return productName;
+	}
+
+	public void setProductName(String productName) {
+		this.productName = productName;
 	}
 
 	public String getShortDescription() {
@@ -77,8 +97,11 @@ public class Listing {
 
 	@Override
 	public String toString() {
-		return "Listing [shortDescription=" + shortDescription + ", detailedDescription=" + detailedDescription
-				+ ", category=" + category + ", startingPrice=" + startingPrice + ", bidEndDate=" + bidEndDate
-				+ ", bidAmounts=" + bidDetails + "]";
+		return "Listing [productId=" + productId + ", productName=" + productName + ", shortDescription="
+				+ shortDescription + ", detailedDescription=" + detailedDescription + ", category=" + category
+				+ ", startingPrice=" + startingPrice + ", bidEndDate=" + bidEndDate + ", bidDetails=" + bidDetails
+				+ "]";
 	}
+
+	
 }
