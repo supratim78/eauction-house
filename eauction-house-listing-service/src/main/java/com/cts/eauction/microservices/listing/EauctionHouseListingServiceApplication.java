@@ -77,7 +77,8 @@ public class EauctionHouseListingServiceApplication {
 
 			BidCommand bidCommand = new BidCommand(bidEvent.getPayload().getBidId(),
 					bidEvent.getPayload().getProductId(), bidEvent.getPayload().getBidAmount(),
-					bidEvent.getPayload().getBuyerId());
+					bidEvent.getPayload().getBuyerId(), bidEvent.getPayload().getBuyerName(),
+					bidEvent.getPayload().getBuyerPhone(), bidEvent.getPayload().getBuyerEmail());
 
 			LOG.info("Bid consumed from topic " + bidCommand);
 			bidService.handleBidConsume(bidCommand);
