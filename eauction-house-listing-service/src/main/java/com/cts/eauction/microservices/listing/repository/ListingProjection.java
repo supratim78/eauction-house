@@ -40,7 +40,7 @@ public class ListingProjection {
 		ProductDetails productDetails = productRepository.findByProductId(query.getProductId());
 		LOG.info("Products obtained from database " + productDetails);
 		List<BidDetails> bids = bidRepository.findByProductId(query.getProductId());
-		Listing listing = new Listing(productDetails.getShortDescription(), productDetails.getDetailedDescription(), 
+		Listing listing = new Listing(productDetails.getProductId(), productDetails.getProductName(), productDetails.getShortDescription(), productDetails.getDetailedDescription(), 
 				productDetails.getCategory(), productDetails.getStartingPrice(), 
 				productDetails.getBidEndDate(), bids);
 		return listing;
