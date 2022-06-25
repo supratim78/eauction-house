@@ -33,7 +33,7 @@ public class BidAggregate {
 		BidDetails bidDetails = bidReadRepository.findByBuyerIdAndId(bid.getBuyerId(),bid.getId());
 		
 		BidCommand bidCommand = new BidCommand(bidDetails.getId(), bidDetails.getProductId(), 
-				bid.getBidAmount(), bidDetails.getBuyerId());
+				bid.getBidAmount(), bidDetails.getBuyerId(),bidDetails.getBuyerName(),bidDetails.getBuyerPhone(),bidDetails.getBuyerEmail());
 		bidWriteRepository.save(bidCommand);
 	}
 	
