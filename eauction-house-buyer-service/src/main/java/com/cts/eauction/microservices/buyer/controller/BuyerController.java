@@ -52,8 +52,8 @@ public class BuyerController {
 				request.getState(),request.getPin(),request.getPhone(),request.getEmail());
 		buyer = service.registerBuyer(buyer);
 		
-		
-		Bid bidRequest = new Bid(null, request.getProductId(),request.getBidAmount(), buyer.getId());
+		Bid bidRequest = new Bid(null, request.getProductId(), request.getBidAmount(), buyer.getId(),
+				buyer.getFirstName() + " " + buyer.getLastName(), buyer.getPhone(), buyer.getEmail());
 		Bid bidResponse = bidClient.placeBid(bidRequest);
 		return buyer;
 	}
