@@ -8,6 +8,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class ProductDetails {
 
 	private Integer productId;
+	private String productName;
 	private String shortDescription;
 	private String detailedDescription;
 	private String category;
@@ -19,10 +20,11 @@ public class ProductDetails {
 		
 	}
 
-	public ProductDetails(Integer productId, String shortDescription, String detailedDescription, String category, Integer startingPrice,
+	public ProductDetails(Integer productId, String productName, String shortDescription, String detailedDescription, String category, Integer startingPrice,
 			LocalDate bidEndDate, Integer sellerId) {
 		super();
 		this.productId = productId;
+		this.productName = productName;
 		this.shortDescription = shortDescription;
 		this.detailedDescription = detailedDescription;
 		this.category = category;
@@ -37,6 +39,14 @@ public class ProductDetails {
 
 	public void setProductId(Integer productId) {
 		this.productId = productId;
+	}
+	
+	public String getProductName() {
+		return productName;
+	}
+
+	public void setProductName(String productName) {
+		this.productName = productName;
 	}
 
 	public String getShortDescription() {
