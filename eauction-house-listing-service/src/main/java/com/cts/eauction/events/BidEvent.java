@@ -6,19 +6,27 @@ public class BidEvent extends Event{
 	private Integer productId;
 	private Integer bidAmount;
 	private Integer buyerId;
+	private String buyerName;
+	private String buyerPhone;
+	private String buyerEmail;
 
 	public BidEvent() {
 
 	}
 	
-	public BidEvent(Integer bidId, Integer productId, Integer bidAmount, Integer buyerId,
-			String eventType) {
+	public BidEvent(Integer bidId, Integer productId, Integer bidAmount, Integer buyerId, String eventType, String buyerName,
+			String buyerPhone, String buyerEmail) {
+		
 		super(eventType);
 		this.bidId = bidId;
 		this.productId = productId;
 		this.bidAmount = bidAmount;
 		this.buyerId = buyerId;
+		this.buyerName = buyerName;
+		this.buyerPhone = buyerPhone;
+		this.buyerEmail = buyerEmail;
 	}
+	
 	public Integer getBidId() {
 		return bidId;
 	}
@@ -49,6 +57,30 @@ public class BidEvent extends Event{
 
 	public void setBuyerId(Integer buyerId) {
 		this.buyerId = buyerId;
+	}
+	
+	public String getBuyerName() {
+		return buyerName;
+	}
+
+	public void setBuyerName(String buyerName) {
+		this.buyerName = buyerName;
+	}
+
+	public String getBuyerPhone() {
+		return buyerPhone;
+	}
+
+	public void setBuyerPhone(String buyerPhone) {
+		this.buyerPhone = buyerPhone;
+	}
+
+	public String getBuyerEmail() {
+		return buyerEmail;
+	}
+
+	public void setBuyerEmail(String buyerEmail) {
+		this.buyerEmail = buyerEmail;
 	}
 
 	@Override
@@ -97,9 +129,7 @@ public class BidEvent extends Event{
 	@Override
 	public String toString() {
 		return "BidEvent [bidId=" + bidId + ", productId=" + productId + ", bidAmount=" + bidAmount + ", buyerId="
-				+ buyerId + ", id=" + id + ", created=" + created + ", eventType=" + eventType + "]";
+				+ buyerId + ", buyerName=" + buyerName + ", buyerPhone=" + buyerPhone + ", buyerEmail=" + buyerEmail
+				+ "]";
 	}
-
-	
-	
 }
