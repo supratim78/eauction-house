@@ -18,23 +18,13 @@ jwt:
 spring:
   application:
     name: gateway
-  #cloud:
-  #  gateway:
-  #    routes:
-  #    - id: SELLER-ADD-PRODUCT
-  #      uri: http://localhost:8020/
-  #      predicates:
-  #      - Path=/e-auction/api/v1/seller/add-product/**
-  #    - id: SELLER-DELETE-PRODUCT
-  #      uri: http://localhost:8020/
-  #      predicates:
-  #      - Path=/e-auction/api/v1/seller/delete/**  
-  #    - id: BUYER
-  #      uri: http://localhost:8040/
-  #      predicates:
-  #     - Path=/e-auction/api/v1/buyer/**
-  #    - id: LISTING
-  #      uri: http://localhost:8060/
-  #      predicates:
-  #      - Path=/e-auction/api/v1/seller/show-bids/**  
-                
+  cloud:
+    gateway:
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: "*"
+            allowedHeaders: "*"             
