@@ -12,7 +12,7 @@ jwt:
   secret: "SECRET"
   token:
     accessToken:
-      validity: "300000"
+      validity: "720000000"
     refreshToken:
       validity: "86400000"
 spring:
