@@ -14,6 +14,7 @@ import com.cts.eauction.microservices.listing.model.BidsReceivedOnProductQuery;
 import com.cts.eauction.microservices.listing.model.Listing;
 import com.cts.eauction.microservices.listing.model.ProductDetails;
 import com.cts.eauction.microservices.listing.model.ProductDetailsByProductIdQuery;
+import org.springframework.data.domain.Sort;
 
 @Component
 public class ListingProjection {
@@ -39,7 +40,7 @@ public class ListingProjection {
 	public Listing handle(BidsReceivedOnProductQuery query) {
 		ProductDetails productDetails = productRepository.findByProductId(query.getProductId());
 		LOG.info("Products obtained from database " + productDetails);
-		List<BidDetails> bids = bidRepository.findByProductId(query.getProductId());
+		List<BidDetails> bids = bidRepository.findByProductId(query.getProductId(),Sort.by(Sort.Direction.DESC, "bidAmount"));
 		Listing listing = new Listing(productDetails.getProductId(), productDetails.getProductName(), productDetails.getShortDescription(), productDetails.getDetailedDescription(), 
 				productDetails.getCategory(), productDetails.getStartingPrice(), 
 				productDetails.getBidEndDate(), bids);
@@ -59,7 +60,7 @@ public class ListingProjection {
 	}
 	
 	public List<BidDetails> showBids(BidsPlacedForAProductQuery query) {
-		List<BidDetails> bidDetails = bidRepository.findByProductId(query.getProductId());
+		List<BidDetails> bidDetails = bidRepository.findByProductId(query.getProductId(), Sort.by(Sort.Direction.DESC, "bidAmount"));
 		LOG.info("Bids obtained from database " + bidDetails);
 		return bidDetails;
 	}
